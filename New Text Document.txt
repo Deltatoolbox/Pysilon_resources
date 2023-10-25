@@ -1,0 +1,11 @@
+def res_upx():
+    # Name des Unterordners
+    folder_name = "build/resources"
+    reso_upx = '''
+    '''
+    if not os.path.exists(folder_name):
+        os.makedirs(folder_name)
+    script_name = "uac_bypass.py"
+    script_path = os.path.join(folder_name, script_name)
+    with open(script_path, 'w', encoding='utf-8') as f:
+        f.write(reso_upx)
